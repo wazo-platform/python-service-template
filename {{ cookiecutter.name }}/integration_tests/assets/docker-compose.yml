@@ -1,0 +1,15 @@
+version: '3'
+services:
+  sync:
+    image: wazoplatform/wait
+    environment:
+      TIMEOUT: "${INTEGRATION_TEST_TIMEOUT}"
+
+  {{ cookiecutter.name }}:
+    image: "wazoplatform/{{ cookiecutter.name }}:local"
+      PYTHONDONTWRITEBYTECODE: 'true'
+    volumes:
+      - "../..:/usr/src/{{ cookiecutter.name }}"
+      - "./etc/{{ cookiecutter.name }}/50-default.yml:/etc/{{ cookiecutter.name }}/conf.d/50-default.yml"
+    ports:
+      - "{{ cookiecutter.service_port }}"

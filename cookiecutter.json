@@ -1,0 +1,13 @@
+{
+  "name": "your-service-name",
+  "slug": "{{ cookiecutter.name.lower().replace(' ', '_').replace('-', '_') }}",
+  "description": "This your-service-name service does this and that",
+  "author": "Wazo Developers",
+  "author_email": "dev@wazo.io",
+  "copyright_holder": "Wazo Communication Inc.",
+  "github_org": "TinxHQ",
+  "service_port": 9876,
+  "year": "{% now 'utc', '%Y' %}",
+  "_extensions": ["jinja2_time.TimeExtension"],
+  "_copy_without_render": [".github"]
+}

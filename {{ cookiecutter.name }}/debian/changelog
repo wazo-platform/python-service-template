@@ -1,0 +1,5 @@
+{{ cookiecutter.name }} (1.0) wazo-dev-buster; urgency=medium
+
+  * Initial release.
+
+ -- {{ cookiecutter.author }} <{{ cookiecutter.author_email}}>  Wed, 01 Jan {{ cookiecutter.year }} 00:00:00 -0400

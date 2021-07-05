@@ -1,0 +1,17 @@
+Source: {{ cookiecutter.name }}
+Section: python
+Priority: extra
+Maintainer: {{ cookiecutter.author }} <{{ cookiecutter.author_email }}>
+Build-Depends: debhelper (>= 11), python3-all, python3-setuptools
+Standards-Version: 3.9.6
+X-Python3-Version: >= 3.7
+
+Package: {{ cookiecutter.name }}
+Architecture: any
+Depends: adduser,
+  xivo-lib-python-python3,
+  ${python3:Depends},
+Pre-Depends: dpkg (>= 1.16.1), python3.7
+Description: {{ cookiecutter.description }}
+ {{ cookiecutter.description }}
+ .

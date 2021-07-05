@@ -1,0 +1,1 @@
+https://github.com/wazo-platform/xivo-lib-python/archive/master.zip#egg=xivo

@@ -1,5 +1,5 @@
 FROM python:3.7-slim-buster AS compile-image
-LABEL maintainer="Wazo Maintainers <dev@wazo.io>"
+LABEL maintainer="Wazo Maintainers <dev@wazo.community>"
 
 RUN python -m venv /opt/venv
 # Activate virtual env

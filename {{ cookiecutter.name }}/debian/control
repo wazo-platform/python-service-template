@@ -1,6 +1,6 @@
 Source: {{ cookiecutter.name }}
 Section: python
-Priority: extra
+Priority: optional
 Maintainer: {{ cookiecutter.author }} <{{ cookiecutter.author_email }}>
 Build-Depends: debhelper (>= 11), python3-all, python3-setuptools
 Standards-Version: 3.9.6

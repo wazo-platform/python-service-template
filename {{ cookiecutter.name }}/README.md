@@ -4,12 +4,12 @@
 
 ## Running unit tests
 
-```
-tox -e py37
+```shell
+tox -e py39
 ```
 
 ## Running integration tests
 
-```
+```shell
 tox -e integration
 ```

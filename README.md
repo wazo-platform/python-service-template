@@ -15,6 +15,6 @@ Then create your new service
 cookiecutter python-service-template
 ```
 
-You can also directly specify the repository `cookiecutter git@github.com:TinxHQ/python-service-template.git`
+You can also directly specify the repository `cookiecutter git@github.com:wazo-platform/python-service-template.git`
 
 Cookiecutter will create a new directory with your service name.

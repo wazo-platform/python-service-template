@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster AS compile-image
+FROM python:3.9-slim-bullseye AS compile-image
 LABEL maintainer="Wazo Maintainers <dev@wazo.community>"
 
 RUN python -m venv /opt/venv
@@ -12,7 +12,7 @@ COPY requirements.txt /usr/src/{{ cookiecutter.name }}/requirements.txt
 WORKDIR /usr/src/{{ cookiecutter.name }}
 RUN pip install . -r requirements.txt -c constraint.txt
 
-FROM python:3.7-slim-buster AS build-image
+FROM python:3.9-slim-bullseye AS build-image
 COPY --from=compile-image /opt/venv /opt/venv
 
 COPY ./etc/{{ cookiecutter.name }} /etc/{{ cookiecutter.name }}

@@ -5,7 +5,7 @@
 ## Running unit tests
 
 ```shell
-tox -e py39
+tox -e py311
 ```
 
 ## Running integration tests

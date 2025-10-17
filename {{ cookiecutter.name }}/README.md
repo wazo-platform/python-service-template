@@ -16,7 +16,7 @@ tox -e integration
 
 ## Linting code
 
-### Run once:
+### Run once
 
 ```shell
 tox -e linters

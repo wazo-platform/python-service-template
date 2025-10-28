@@ -5,7 +5,7 @@
 ## Running unit tests
 
 ```shell
-tox -e py39
+tox -e py311
 ```
 
 ## Running integration tests
@@ -16,7 +16,7 @@ tox -e integration
 
 ## Linting code
 
-### Run once:
+### Run once
 
 ```shell
 tox -e linters
